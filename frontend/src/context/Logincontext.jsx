@@ -7,7 +7,7 @@ export const Loginprovider = (props) => {
     const [islogged, setlogged] = useState(false);
     useEffect(() => {
 
-        const logcheck = async () => {
+        const logcheck =  async () => {
             await axios.get("http://localhost:8080", { withCredentials: true })
         }
     }, [])
