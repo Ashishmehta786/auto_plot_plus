@@ -58,6 +58,13 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
 
 ]
+PASSWORD_HASHERS = [
+    "django.contrib.auth.hashers.BCryptSHA256PasswordHasher",
+    "django.contrib.auth.hashers.PBKDF2PasswordHasher",
+    "django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher",
+    "django.contrib.auth.hashers.Argon2PasswordHasher",
+    "django.contrib.auth.hashers.ScryptPasswordHasher",
+]
 
 ROOT_URLCONF = 'backend_django.urls'
 
